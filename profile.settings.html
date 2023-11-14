@@ -1,0 +1,160 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kennel Connect</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="container">
+        <div id="banner">
+            <img src="pics/final logo (1).png" alt="Kennel Connect" style= width:200px;height:140px;/> <!--add img-fluid to be able to schmove it around!-->
+        
+             <bar class="navbar">
+            <ul>
+                 <li><a href="index.html">Home</a></li> 
+                 <li><a href="about.html">About</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+             </ul>
+             <div class="clearfix">
+                   <!-- <img src="pics/chat.png" style="width:40px; height:40px">
+                    <img src="pics/home-icon.png" style="width:40px; height:40px">-->
+                    <img src="pics/settings-icon.png" a href="#" width:50px; height:50px id="menuBtn" />
+             </div><!--navbar-icons or clearfix-->
+            </bar><!--navbar-->
+        </div><!--banner-->
+    <div id="container-bottom">
+        <nav id="sideNav">
+            <ul>
+                <li><a href="profile.html">Your Profile</a></li><br/>
+                <li><a href="profile.settings.html">Edit Profile</a></li><br/>
+                <li><a href="notifications.html">Notifications</a></li><br/>
+                <li><a href="#">History</a></li><br/>
+                <li><a href="#">Dark Mode</a></li><br/>
+                <li><a href="#">News</a></li><br/>
+            </ul>
+        </nav><!--side-nav-->
+<script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right="-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+            }
+            else{
+                sideNav.style.right="-250px";
+            }
+        }
+</script>
+<!--add container fluid to be able to have the container change sizes when the screen size changes-->
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Profile Settings</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
+                    <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value=""></div>
+                    <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="enter address line 1" value=""></div>
+                    <!--<div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>-->
+                    <div class="col-md-12"><label class="labels">City</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                    <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                    <div class="col-md-12"><label class="labels">Area Code</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
+                    <div class="col-md-12"><label class="labels">Email Address</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
+                    <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div>
+                </div>
+                <div class="row mt-3">
+                    <!--<div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
+                    <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
+                </div>-->
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+            </div>
+        </div>
+        <!--<div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
+                <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
+                <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
+            </div>
+        </div>
+    </div>-->
+</div>
+</div>
+</div>
+<!--This is how to make it actually functioning. Idk how to save it and idk how to make it look cuter yet-->
+<script type="text/javascript">
+let button = document.getElementById("signup");
+
+button.addEventListener('click', () => {
+  let forminfo = {
+    fname: document.getElementById('name1').value,
+    lname: document.getElementById('name2').value,
+    email: document.getElementById('email').value,
+    pswrd: document.getElementById('pswrd').value 
+  };
+  dispData(forminfo);
+});
+                 
+function dispData(forminfo) {
+  if(forminfo) {
+    var results = document.getElementById('results');
+    results.innerHTML = `<table
+                          <body>
+                            <tr>
+                                <td>First Name</td>
+                                <td>${forminfo.fname}</td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td>${forminfo.lname}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>${forminfo.email}</td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>${forminfo.pswrd}</td>
+                            </tr>
+                        </tbody>
+                    </table>`;  
+    }
+}
+</script>
+<!--<div class = "container">
+    <h1>Registration</h1>
+    <div>
+        <div class="form-group">
+            <input type="text" name="name1" value="test" id="name1" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="name2" value="test" id="name2" placeholder="Last Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" value="test@test.de" name="email" id="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+            <input type="password" value="test" name="pswrd" id="pswrd" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="signup">Register</button>
+             
+        </div>
+    </div>
+    <h2>Results</h2>
+    <div id="results">-->
+            
+    </div>
+</div>

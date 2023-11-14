@@ -1,0 +1,122 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kennel Connect Contact Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10ddbc535d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="container">
+        <div id="banner">
+            <img src="pics/final logo (1).png" alt="Kennel Connect" style= width:200px;height:140px;/> <!--add img-fluid to be able to schmove it around!-->
+        
+             <bar class="navbar">
+            <ul>
+                 <li><a href="index.html">Home</a></li> 
+                 <li><a href="About.html">About</a></li> 
+                <li><a href="Contact.html">Contact</a></li> 
+             </ul>
+             <div class="clearfix">
+                   <!-- <img src="pics/chat.png" style="width:40px; height:40px">
+                    <img src="pics/home-icon.png" style="width:40px; height:40px">-->
+                    <img src="pics/settings-icon.png" a href="#" width:50px; height:50px id="menuBtn" />
+             </div><!--navbar-icons or clearfix-->
+            </bar><!--navbar-->
+        </div><!--banner-->
+    <div id="container-bottom">
+        <nav id="sideNav">
+            <ul>
+                <li><a href="Profile.html">Your Profile</a></li><br/>
+                <li><a href="profile.settings.html">Edit Profile</a></li><br/>
+                <li><a href="notifications.html">Notifications</a></li><br/>
+                <li><a href="#">History</a></li><br/>
+                <li><a href="#">Dark Mode</a></li><br/>
+                <li><a href="#">News</a></li><br/>
+            </ul>
+        </nav><!--side-nav-->
+<script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right="-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+            }
+            else{
+                sideNav.style.right="-250px";
+            }
+        }
+</script>
+<!--add container fluid to be able to have the container change sizes when the screen size changes-->
+<section class="contact">
+    <div class="content">
+            <h2> Contact Us</h2>
+            <p> idk what I'm writing here yet lol</p>
+    </div><!--content-->
+    <div class="contact-container">
+        <!--img for background pexels-snapware-46024.jpg-->
+            <div id="left-col">
+            <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-location-dot" style="color: #4887ba;"></i>
+                        <div class="text">
+                            <h2>Address</h2>
+                            <p> 4329 West Drive</p> <br/>
+                        </div><!--text-->
+                        </div><!--icon-->
+                    </div><!--box-->
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone" style="color: #4887ba;"></i>
+                        <div class="text">
+                            <h2>Phone Number</h2>
+                            <p>219-0345-7930</p><br/>
+                        </div><!--text-->
+                        </div><!--icon-->
+                    </div><!--box-->
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-envelope" style="color: #4887ba;"></i>
+                        <div class="text">
+                            <h2>Email</h2>
+                            <p>KennelConnect@gmail.com</p>
+                        </div><!--text-->
+                        </div><!--icon-->
+                    </div><!--box-->
+                    </div><!--contact-info-->
+                    </div><!--left-col-->
+        <div id="right-col">
+        <div class="contact-form">
+            <form>
+                <h2>Send Message</h2>
+                <div class="input-box">
+                    <input type="text" name=""required="required">
+                    <span>Full Name</span>
+                </div><!--input-box-->
+                 <div class="input-box">
+                    <input type="text" name=""required="required">
+                    <span>Email</span>
+                 </div><!--input-box-->
+                <div class="input-box">
+                    <textarea required="required"></textarea>
+                    <span>Type Your Message</span>
+                </div><!--input-box-->
+                <div class="input-box">
+                    <input type="submit" name="" value="Send">
+                </div><!--input-box-->
+            </form>
+        </div><!--contact-form-->
+        </div><!--right-col-->
+
+
+    </div><!--contact-container-->
+
+</section><!--contact-->
+
+    </div><!--container-bottom-->
+</div><!--container-->
+
+</body>
+
+</html>
