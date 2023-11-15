@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Kennel Connect</title>
     <link href="css/homestyle.css" rel="stylesheet" type="text/css" />
-    <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <script src="https://kit.fontawesome.com/10ddbc535d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,40 +51,40 @@
 </script>
 
 <!--photo slider test-->
-
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><i class="fa fa-close"></i>-->
+    
 		<div class="slider">
 			<div class="img-box">
 				<img src="pics/Your paragraph text.png" class="slider-img">
 			</div>
 
-			<button class="btn" onclick="prev()">Prev</button>
-			<button class="btn" onclick="next()">Next</button>
+			<div class="L-button" onclick="prev()" id="button"><i class="fa-solid fa-circle-xmark" style="color: #ffee93;" size=width: 100px; height:100px;></i></button></div>
+			<div class="R-button" onclick="next()" id="button"><i class="fa-brands fa-gratipay" style="color: #d6edff;"></i></button></div>
 		</div>
-
+        
 		<!--<script src="js/main.js"></script>-->
-<script>
-        var slider_img = document.querySelector('.slider-img');
-var images = ['Your paragraph text.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
-var i = 0;
+            <script>
+                 var slider_img = document.querySelector('.slider-img');
+                    var images = ['Your paragraph text.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
+                    var i = 0;
 
-function prev(){
-	if(i <= 0) i = images.length;	
-	i--;
-	return setImg();			 
-}
+                function prev(){
+	                if(i <= 0) i = images.length;	
+	                i--;
+	                return setImg();			 
+                    }
 
-function next(){
-	if(i >= images.length-1) i = -1;
-	i++;
-	return setImg();			 
-}
+                function next(){
+	                if(i >= images.length-1) i = -1;
+	                i++;
+	                return setImg();			 
+                    }
 
-function setImg(){
-	return slider_img.setAttribute('src', "pics/"+images[i]);
+                function setImg(){
+	                return slider_img.setAttribute('src', "pics/"+images[i]);
 
-}
-</script>
-
+                    }
+            </script>
 
 
     </div><!--container-bottom-->
