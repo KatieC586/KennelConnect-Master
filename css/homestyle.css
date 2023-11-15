@@ -132,6 +132,7 @@ nav ul li a{
     top:35px;*/
     z-index:3;
     cursor:pointer;
+    float:right;
 }
 /*.left-column,.right-column{
     flex-basis:50%;
@@ -401,7 +402,6 @@ color:#fff;
     font-size: 3rem;
     margin-left:20px;
     cursor: pointer;
-    width:50px;
     position:relative;
     float:left;
     
@@ -416,7 +416,6 @@ color:#fff;
     font-size: 3rem;
     margin-left:20px;
     cursor: pointer;
-    width:50px;
     position:relative;
     float:right;
   }
