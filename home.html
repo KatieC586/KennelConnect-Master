@@ -50,6 +50,43 @@
         }
 </script>
 
+<!--photo slider test-->
+
+		<div class="slider">
+			<div class="img-box">
+				<img src="pics/Your paragraph text.png" class="slider-img">
+			</div>
+
+			<button class="btn" onclick="prev()">Prev</button>
+			<button class="btn" onclick="next()">Next</button>
+		</div>
+
+		<!--<script src="js/main.js"></script>-->
+<script>
+        var slider_img = document.querySelector('.slider-img');
+var images = ['Your paragraph text.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
+var i = 0;
+
+function prev(){
+	if(i <= 0) i = images.length;	
+	i--;
+	return setImg();			 
+}
+
+function next(){
+	if(i >= images.length-1) i = -1;
+	i++;
+	return setImg();			 
+}
+
+function setImg(){
+	return slider_img.setAttribute('src', "pics/"+images[i]);
+
+}
+</script>
+
+
+
     </div><!--container-bottom-->
 </div><!--container-->
 
