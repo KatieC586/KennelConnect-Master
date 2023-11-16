@@ -680,7 +680,7 @@ color:#fff;
     background-color: #fde74c;
   }
 
-  /* info card 
+   /*info card*/
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 *{
@@ -691,9 +691,6 @@ color:#fff;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-body{
-    background: #f3f3f3;
-}
 
 .wrapper{
     position: absolute;
@@ -775,4 +772,3 @@ body{
     color: #919aa3;
 }
 
-*/
