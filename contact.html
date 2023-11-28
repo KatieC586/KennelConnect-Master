@@ -51,73 +51,50 @@
             }
         }
 </script>
-<!--add container fluid to be able to have the container change sizes when the screen size changes-->
-<section class="contact">
-    <div class="content">
-            <h2> Contact Us</h2>
-            <p> idk what I'm writing here yet lol</p>
-    </div><!--content-->
-    <div class="contact-container">
-        <!--img for background pexels-snapware-46024.jpg-->
-            <div id="left-col">
-            <div class="contact-info">
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-location-dot" style="color: #4887ba;"></i>
-                        <div class="text">
-                            <h2>Address</h2>
-                            <p> 4329 West Drive</p> <br/>
-                        </div><!--text-->
-                        </div><!--icon-->
-                    </div><!--box-->
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-phone" style="color: #4887ba;"></i>
-                        <div class="text">
-                            <h2>Phone Number</h2>
-                            <p>219-0345-7930</p><br/>
-                        </div><!--text-->
-                        </div><!--icon-->
-                    </div><!--box-->
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-envelope" style="color: #4887ba;"></i>
-                        <div class="text">
-                            <h2>Email</h2>
-                            <p>KennelConnect@gmail.com</p>
-                        </div><!--text-->
-                        </div><!--icon-->
-                    </div><!--box-->
-                    </div><!--contact-info-->
-                    </div><!--left-col-->
-        <div id="right-col">
-        <div class="contact-form">
-            <form>
-                <h2>Send Message</h2>
-                <div class="input-box">
-                    <input type="text" name=""required="required">
-                    <span>Full Name</span>
-                </div><!--input-box-->
-                 <div class="input-box">
-                    <input type="text" name=""required="required">
-                    <span>Email</span>
-                 </div><!--input-box-->
-                <div class="input-box">
-                    <textarea required="required"></textarea>
-                    <span>Type Your Message</span>
-                </div><!--input-box-->
-                <div class="input-box">
-                    <input type="submit" name="" value="Send">
-                </div><!--input-box-->
-            </form>
-        </div><!--contact-form-->
-        </div><!--right-col-->
 
 
-    </div><!--contact-container-->
-
-</section><!--contact-->
-
-    </div><!--container-bottom-->
+<div class="container">
+    <div class="contact-box">
+        <div class="left">
+                <div class="box">
+                <div class="icon"><i class="fa-solid fa-location-dot" style="color: #4887ba;"></i>
+                    <div class="text">
+                    <h2>Address</h2>
+                    <p> 4329 West Drive</p> <br/>
+                    </div><!--text-->
+                    </div><!--icon-->
+                </div><!--box-->
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone" style="color: #4887ba;"></i>
+                    <div class="text">
+                        <h2>Phone Number</h2>
+                        <p>219-0345-7930</p><br/>
+                     </div><!--text-->
+                    </div><!--icon-->
+                </div><!--box-->
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope" style="color: #4887ba;"></i>
+                    <div class="text">
+                        <h2>Email</h2>
+                        <p>KennelConnect@gmail.com</p>
+                    </div><!--icon-->
+                     </div><!--text-->
+                </div><!--box-->
+            </div><!--left-->
+        <div class="right">
+            <h2>Contact Us</h2>
+            <input type="text" class="field" placeholder="Your Name">
+            <input type="text" class="field" placeholder="Your Email">
+            <input type="text" class="field" placeholder="Phone">
+            <textarea placeholder="Message" class="field"></textarea>
+            <button class="btn">Send</button>
+        </div><!--right-->
+    </div><!--contact-box-->
 </div><!--container-->
+
 
 </body>
 
 </html>
+    </div><!--container-bottom-->
+</div><!--container-->
