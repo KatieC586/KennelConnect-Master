@@ -1,6 +1,8 @@
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Kennel Connect</title>
     <link href="css/homestyle.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/10ddbc535d.js" crossorigin="anonymous"></script>
@@ -52,18 +54,17 @@
 
 <!--photo slider test-->
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><i class="fa fa-close"></i>-->
-    
-		<div class="slider">
-			<div class="img-box">
+    <div class="slide-wrapper">
+		    <div class="slider">
+			    <div class="img-box">
 				<img src="pics/Your paragraph text.png" class="slider-img";>
-			</div>
+			    </div>
 
-			<div class="L-button" onclick="prev()" id="button"><i class="fa-solid fa-circle-xmark fa-2xl" style="color: #ffee93;" size=width: 100px; height:100px;></i></button></div>
-			<div class="R-button" onclick="next()" id="button"><i class="fa-brands fa-gratipay fa-2xl" style="color: #d6edff;"></i></button></div>
-		</div>
+			    <div class="L-button" onclick="prev()" id="button"><i class="fa-solid fa-circle-xmark fa-2xl" style="color: #ffee93;" size=width: 100px; height:100px;></i></button></div>
+			    <div class="R-button" onclick="next()" id="button"><i class="fa-brands fa-gratipay fa-2xl" style="color: #d6edff;"></i></button></div>
+		    </div><!--slider-->
         
-		<!--<script src="js/main.js"></script>-->
-            <script>
+        <script>
                  var slider_img = document.querySelector('.slider-img');
                     var images = ['Your paragraph text.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
                     var i = 0;
@@ -84,8 +85,8 @@
 	                return slider_img.setAttribute('src', "pics/"+images[i]);
 
                     }
-            </script>
-
+         </script>
+    </div><!--slide-wrapper-->
 
     </div><!--container-bottom-->
 </div><!--container-->
