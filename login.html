@@ -32,8 +32,9 @@
                     <a href ="a">Forgot password?</a>
                 </div>
     
-                <button type="submit" class="btn">Login</button>
-    
+                <button type="submit" id="btn">Login</button>
+
+                
                 <div class="register-link">
                     <p>Don't have an account? <a href="#">Register</a>
                     </p>
@@ -45,5 +46,13 @@
         </div>
     
     </body>
-    
+
+   <script>
+        document.getElementById("btn").addEventListener("click", redirectFunction);
+        
+        function redirectFunction(){
+            window.location.href = "file:///C:/Users/frida/OneDrive/Documents/GitHub/KennelConnect-Master/home.html";}
+    </script>
+
+
     </html>
