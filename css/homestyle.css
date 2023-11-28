@@ -783,5 +783,10 @@ color:#fff;
     color: #919aa3;
 }
 
+@media (max-width: 600px) {
 
+    .wrapper4{
+        width: 100%;
+    }
 
+}
