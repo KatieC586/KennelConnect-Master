@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Kennel Connect</title>
-    <link href="css/homestyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/profile.settings.css" rel="stylesheet" type="text/css" />
     <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet"/>
 </head>
@@ -51,111 +51,78 @@
             }
         }
 </script>
-<!--add container fluid to be able to have the container change sizes when the screen size changes-->
-<div class="container rounded bg-white mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="pics/carlos.jpg"><span class="font-weight-bold">Carlos</span><span class="text-black-50">morales@purdue.edu</span><span> </span></div>
-        </div>
-        <div class="col-md-5 border-right">
-            <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="text-right">Profile Settings</h4>
-                </div>
-                <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
-                    <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value=""></div>
-                    <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="enter address line 1" value=""></div>
-                    <!--<div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>-->
-                    <div class="col-md-12"><label class="labels">City</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                    <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                    <div class="col-md-12"><label class="labels">Area Code</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div>
-                    <div class="col-md-12"><label class="labels">Email Address</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
-                    <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value=""></div>
-                </div>
-                <div class="row mt-3">
-                    <!--<div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value=""></div>
-                    <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
-                </div>-->
-                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
-            </div>
-        </div>
-        <!--<div class="col-md-4">
-            <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
-                <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
-                <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
-            </div>
-        </div>
-    </div>-->
-</div>
-</div>
-</div>
-<!--This is how to make it actually functioning. Idk how to save it and idk how to make it look cuter yet-->
-<script type="text/javascript">
-let button = document.getElementById("signup");
 
-button.addEventListener('click', () => {
-  let forminfo = {
-    fname: document.getElementById('name1').value,
-    lname: document.getElementById('name2').value,
-    email: document.getElementById('email').value,
-    pswrd: document.getElementById('pswrd').value 
-  };
-  dispData(forminfo);
-});
-                 
-function dispData(forminfo) {
-  if(forminfo) {
-    var results = document.getElementById('results');
-    results.innerHTML = `<table
-                          <body>
-                            <tr>
-                                <td>First Name</td>
-                                <td>${forminfo.fname}</td>
-                            </tr>
-                            <tr>
-                                <td>Last Name</td>
-                                <td>${forminfo.lname}</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>${forminfo.email}</td>
-                            </tr>
-                            <tr>
-                                <td>Password</td>
-                                <td>${forminfo.pswrd}</td>
-                            </tr>
-                        </tbody>
-                    </table>`;  
-    }
-}
-</script>
-<!--<div class = "container">
-    <h1>Registration</h1>
-    <div>
-        <div class="form-group">
-            <input type="text" name="name1" value="test" id="name1" placeholder="First Name" required>
-        </div>
-        <div class="form-group">
-            <input type="text" name="name2" value="test" id="name2" placeholder="Last Name" required>
-        </div>
-        <div class="form-group">
-            <input type="email" value="test@test.de" name="email" id="email" placeholder="Email Address" required>
-        </div>
-        <div class="form-group">
-            <input type="password" value="test" name="pswrd" id="pswrd" placeholder="Password" required>
-        </div>
-        <div class="form-group">
-            <button type="submit" id="signup">Register</button>
-             
+<div class="wrapper bg-white mt-sm-5">
+    <h4 class="pb-4 border-bottom">Account settings</h4>
+    <div class="d-flex align-items-start py-3 border-bottom">
+        <img src="pics/carlos.jpg"
+            class="img" alt="">
+        <div class="pl-sm-4 pl-2" id="img-section">
+            <b>Profile Photo</b>
+            <p>Accepted file type .png. Less than 1MB</p>
+            <button class="btn button border"><b>Upload</b></button>
         </div>
     </div>
-    <h2>Results</h2>
-    <div id="results">-->
-            
+    <div class="py-2">
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label for="firstname">First Name</label>
+                <input type="text" class="bg-light form-control" placeholder="Carlos">
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="bg-light form-control" placeholder="Morales">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label for="email">Email Address</label>
+                <input type="text" class="bg-light form-control" placeholder="morales@purdue.edu">
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="bg-light form-control" placeholder="+1 213-548-6015">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label for="country">Country</label>
+                <select name="country" id="country" class="bg-light">
+                    <option value="usa" selected>USA</option>
+                    <option value="india">India</option>
+                    <option value="uk">UK</option>
+                    <option value="uae">UAE</option>
+                </select>
+            </div>
+            <div class="col-md-6 pt-md-0 pt-3" id="lang">
+                <label for="language">Language</label>
+                <div class="arrow">
+                    <select name="language" id="language" class="bg-light">
+                        <option value="english" selected>English</option>
+                        <option value="english_us">English (United States)</option>
+                        <option value="enguk">English UK</option>
+                        <option value="arab">Arabic</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <button class="btn btn-primary mr-3">Save Changes</button>
+            <button class="btn border button">Cancel</button>
+        </div>
+        <div class="d-sm-flex align-items-center pt-3" id="deactivate">
+            <div>
+                <b>Deactivate your account</b>
+                <p>Details about your company account and password</p>
+            </div>
+            <div class="ml-auto">
+                <button class="btn danger">Deactivate</button>
+            </div>
+        </div>
     </div>
 </div>
+
+
+
+</body>
+</html>
