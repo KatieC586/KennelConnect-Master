@@ -432,12 +432,12 @@ float: right;
     width:100%;
 }
 .L-button {
-    padding: 12px 16px;
+    padding:12px 16px;
     font-size: 3rem;
-    margin-left:20px;
+    margin-left:250px;
     cursor: pointer;
     position:relative;
-    float:left;
+    /*float:left;*/
     
   }
   
@@ -448,7 +448,7 @@ float: right;
   .R-button {
     padding: 12px 16px;
     font-size: 3rem;
-    margin-left:20px;
+    margin-right:250px;
     cursor: pointer;
     position:relative;
     float:right;
