@@ -156,16 +156,16 @@ float: right;
     /*font-family: 'Lato', sans-serif;*/
 
   
-  /*second option css*/
   html {
     scroll-behavior: smooth;
   }
   
   
   nav {
-    background-color: #111;
+    background-color: #4887BA ;
     color: white;
     padding: 20px 50px;
+    
   }
   
   .navTop {
@@ -177,7 +177,7 @@ float: right;
   .search {
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: #fde74c;
     padding: 10px 20px;
     border-radius: 10px;
   }
@@ -188,7 +188,7 @@ float: right;
   }
   
   .searchInput::placeholder {
-    color: lightgray;
+    color: #d6edff;
   }
   
   .limitedOffer {
@@ -201,6 +201,11 @@ float: right;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    display:flex;
+    /*margin-top:80px;*/
+    margin-left: 10px;
+    margin-right:10px;
   }
   
   .menuItem {
@@ -282,7 +287,7 @@ float: right;
     color: black;
   }
   
-  .sliderItem:nth-child(1) .sliderBg {
+  /*.sliderItem:nth-child(1) .sliderBg {
     background-color: #E56B6F;
   }
   .sliderItem:nth-child(2) .sliderBg {
@@ -312,7 +317,7 @@ float: right;
   }
   .sliderItem:nth-child(5) .sliderPrice {
     color: cornsilk;
-  }
+  }*/
   
   .features {
     display: flex;
@@ -329,8 +334,8 @@ float: right;
   }
   
   .featureIcon {
-    width: 50px;
-    height: 50px;
+    width: 50%;
+    height: 50%;
   }
   
   .featureTitle {
