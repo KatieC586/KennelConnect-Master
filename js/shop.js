@@ -5,76 +5,76 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "Air Force",
+    title: "Food",
     price: 119,
     colors: [
       {
         code: "black",
-        img: "./img/air.png",
+        img: "pics/treats.png",
       },
       {
         code: "darkblue",
-        img: "./img/air2.png",
+        img: "pics/carrier.png", //just using this pic to test if js works
       },
     ],
   },
   {
     id: 2,
-    title: "Air Jordan",
+    title: "Supplies",
     price: 149,
     colors: [
       {
         code: "lightgray",
-        img: "./img/jordan.png",
+        img: "pics/carrier.png",
       },
       {
         code: "green",
-        img: "./img/jordan2.png",
+        img: "pics/carrier.png",
       },
     ],
   },
   {
     id: 3,
-    title: "Blazer",
+    title: "Dog Toys",
     price: 109,
     colors: [
       {
         code: "lightgray",
-        img: "./img/blazer.png",
+        img: "pics/dog toy.png",
       },
       {
         code: "green",
-        img: "./img/blazer2.png",
+        img: "pics/dog toy.png",
       },
     ],
   },
   {
     id: 4,
-    title: "Crater",
+    title: "Cat Toys",
     price: 129,
     colors: [
       {
         code: "black",
-        img: "./img/crater.png",
+        img: "pics/cat toy.png",
       },
       {
         code: "lightgray",
-        img: "./img/crater2.png",
+        img: "pics/cat toy.png",
       },
     ],
   },
   {
     id: 5,
-    title: "Hippie",
+    title: "Medicine",
     price: 99,
     colors: [
       {
         code: "gray",
-        img: "./img/hippie.png",
+        img: ".pics/medine.png",
       },
       {
         code: "black",
-        img: "./img/hippie2.png",
+        img: "pics/medicine.png",
       },
     ],
   },
@@ -136,4 +136,3 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
-  //second option//
