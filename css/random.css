@@ -30,7 +30,20 @@ ul li a{
     padding: 0 10px;
 
 }
-
+bar ul li a::after{
+    content: '';
+    width:0;
+    height:10px;
+    background: #fde74c;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:-55px;
+    transition:0.5s;
+}
+bar ul li a:hover::after{
+    width: 100%;
+}
 .logo{
     width: 150px;
 }
@@ -68,4 +81,40 @@ nav ul li a{
 }
 
 /*pet information swipy thingy*/
+
+.ul{
+    flex:1;
+    text-align:right;
+}
+ul li{
+    display: inline-block;
+    list-style:none;
+    margin: 0 25px;
+    text-align: right;
+
+}
+ul li a{
+text-decoration:none;
+color: black;
+padding: 0 10px;
+position:relative;
+}
+
+
+
+
+.clearfix:after {
+    text-decoration: none;
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+    .clearfix { display: inline-block; }
+    * html .clearfix { height: 1%; }
+    .clearfix { display: block; }
+
+
 
