@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*naviagtion bar*/
+
+#banner{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar{
+    margin: 30px auto;
+    float: right;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+
+}
+
+.logo{
+    width: 150px;
+}
+
+#menuBtn{
+    width: 50px;
+    cursor: pointer;
+    float: right;
+    padding-top: 10px;
+    z-index: 2;
+}
+
+/* side navigation bar*/
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: #e56b6f;
+    z-index: 2;
+    transition: .5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
