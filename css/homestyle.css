@@ -864,6 +864,9 @@ select:focus{
 .btn-primary{
     background-color: #E56B6F;
 }
+.btn-primary:hover{
+    background-color: #86c541;
+}
 .danger{
     background-color: #fff;
     color: #e20404;
