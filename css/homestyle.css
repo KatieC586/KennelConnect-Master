@@ -797,7 +797,34 @@ textarea{
     }
 
 }
+.mission{
+    padding:10px;
+    margin:10px auto;
+    position:absolute;
+    top:100%;
+    text-align: center;
+    
+}
+.mission p{
+font-size:19px;
+line-height: 1.5;
+text-align:center;
+}
+.mission h8{
+    font-size: 23px;
+    text-align: center;
+}
+/*.Millie{
+ 
+    position:relative;
+    float:right;
+}
+.Miso{
+    
+    position:relative;
 
+
+}*/
 .wrapper{
     padding: 30px 50px;
     border: 1px solid #ddd;
