@@ -54,37 +54,6 @@
         </div>
 
         <div class="container-wrapper">
-            <div class="slider">
-			    <div class="img-box">
-				<img src="pics/Your paragraph text.png" class="slider-img";>
-			    </div>
-
-			    <div class="L-button" onclick="prev()" id="button"><i class="fa-solid fa-circle-xmark fa-2xl" style="color: #ffee93;" size=width: 100px; height:100px;></i></button></div>
-			    <div class="R-button" onclick="next()" id="button"><i class="fa-brands fa-gratipay fa-2xl" style="color: #d6edff;"></i></button></div>
-		    </div><!--slider-->
-
-            <script>
-                var slider_img = document.querySelector('.slider-img');
-                   var images = ['Your paragraph text.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
-                   var i = 0;
-
-               function prev(){
-                   if(i <= 0) i = images.length;	
-                   i--;
-                   return setImg();			 
-                   }
-
-               function next(){
-                   if(i >= images.length-1) i = -1;
-                   i++;
-                   return setImg();			 
-                   }
-
-               function setImg(){
-                   return slider_img.setAttribute('src', "pics/"+images[i]);
-
-                   }
-            </script>
             
         </div>
 
