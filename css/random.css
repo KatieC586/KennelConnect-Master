@@ -1,3 +1,7 @@
+:root{
+    --primary-color: #fde74c;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@
     margin-top: 30px;
     padding-left: 20px;
     padding-right: 250px;
+    width: 100%;
 }
 
 .navbar{
@@ -17,6 +22,7 @@
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    padding-right: 250px;
 }
 
 ul li{
@@ -115,6 +121,55 @@ nav ul li a{
 
 /*pet information swipy thingy*/
 
+.icons{
+    width: 50px;
+    height: 50px;
+    border: #e56b6f;
+}
+
+.radio-tile-group{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.input-container{
+   position: relative;
+   height: 7rem;
+   width: 7rem;
+   margin: 0.5rem;
+}
+
+.input-container input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.input-container .radio-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+
+.input-container label{
+    color: #4887ba;
+    font-weight: 600;
+}
+
+input:checked + .radio-tile{
+    background-color: #e56b6f;
+    box-shadow: 0 0 12px var(--primary-color);
+}
 
 
 

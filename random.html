@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <!--THIS IS NAVIGATION BAR CODE-->
     <div id="container">
         <div id="banner">
             <img src="assets/img/transparent final logo.png" class="logo">
@@ -32,8 +33,8 @@
                     <li><a href="profile.settings.html">Edit Profile</a></li><br/>
                     <li><a href="notifications.html">Messages</a></li><br/>
                     <li><a href="shop.html">Shop</a></li><br/>
-                    <li><a href="#">History</a></li><br/>
-                    <li><a href="#">Resources</a></li><br/>
+                    <li><a href="matches.html">Matches</a></li><br/>
+                    <li><a href="resources.html">Resources</a></li><br/>
                 </ul>
             </nav>
             <!--side navtivation java script-->
@@ -52,84 +53,74 @@
                 }
             </script>
         </div>
+        <!--THIS IS WHERE NAVIGATION BAR CODE ENDS-->
 
-        <div class="container-wrapper">
-            <div class="slider">
-			    <div class="img-box">
-				<img src="pics/Your paragraph text.png" class="slider-img";>
-			    </div>
+        <!--THIS IS WHERE YOU PUT YOUR CODE!!!-->
 
-			    <div class="L-button" onclick="prev()" id="button"><i class="fa-solid fa-circle-xmark fa-2xl" style="color: #ffee93;" size=width: 100px; height:100px;></i></button></div>
-			    <div class="R-button" onclick="next()" id="button"><i class="fa-brands fa-gratipay fa-2xl" style="color: #d6edff;"></i></button></div>
-		    </div><!--slider-->
+        <div class="radio-tile-group"><!--YOU WILL GET RID OF THIS CODE FOR YOUR PAGE-->
 
-            <script>
-                var slider_img = document.querySelector('.slider-img');
-                   var images = ['Your paragraph text.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
-                   var i = 0;
+            <!--all pets-->    
+            <div class="input-container">
+                <input id="btn" type="radio" name="radio">
+                <div class="radio-tile">
+                    <img src="assets/img/pet.png" class="icons">
+                    <label for="walk">All</label>
+                </div>
+            </div>
+            <!--dogs-->
+            <div class="input-container">
+                <input id="btn" type="radio" name="radio">
+                <div class="radio-tile">
+                    <img src="assets/img/dogicon.png" class="icons">
+                    <label for="walk">Dogs</label>
+                </div>
+            </div>
+            <!--cats-->
+            <div class="input-container">
+                <input id="btn" type="radio" name="radio">
+                <div class="radio-tile">
+                    <img src="assets/img/caticon.png" class="icons">
+                    <label for="walk">Cats</label>
+                </div>
+            </div>
+        </div><!--YOU WILL GET RID OF THIS CODE TO PUT IN YOUR OWN CODEe-->
 
-               function prev(){
-                   if(i <= 0) i = images.length;	
-                   i--;
-                   return setImg();			 
-                   }
 
-               function next(){
-                   if(i >= images.length-1) i = -1;
-                   i++;
-                   return setImg();			 
-                   }
-
-               function setImg(){
-                   return slider_img.setAttribute('src', "pics/"+images[i]);
-
-                   }
-            </script>
-            
+        <!--work in progress-->
+        <!--<div id="swiper">
+            <div class="card">
+                <img src="assets/slide1.png" alt="">
+            </div>
         </div>
 
-
-    </div>
-    
-
-
-    <!--<section id="header">
-        <div class="container">
-            <img src="assets/img/transparent final logo.png" class="logo">
-
+        <div id="swiper">
+            <div class="card">
+                <img src="assets/slide2.png" alt="">
+            </div>
         </div>
-    
-    </section>
 
-    <nav id="sideNav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Your Profile</a></li>
-            <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">Messages</a></li>
-        </ul>
-    </nav>
-    <img src="pics/settings-icon.png" id="menuBtn">-->
+        <div id="swiper">
+            <div class="card">
+                <img src="assets/slide3.png" alt="">
+            </div>
+        </div>
 
+        <div id="swiper">
+            <div class="card">
+                <img src="assets/slide4.png" alt="">
+            </div>
+        </div>
 
-<!--java script for sliding navigation bar-->
-    <!--<script>
-        var menuBtn = document.getElementById("menuBtn");
-        var sideNav = document.getElementById("sideNav");
-
-        sideNav.style.right = "-250px";
-        menuBtn.onclick = function(){
-            if(sideNav.style.right == "-250px"){
-                sideNav.style.right = "0";
-            }
-            else{
-                sideNav.style.right = "-250px";
-            }
-        }
-    </script>-->
+        <div id="swiper">
+            <div class="card">
+                <img src="assets/slide5.png" alt="">
+            </div>
+        </div>-->
+        
+    </div><!--END OF CONTAINER DIV-->
     
 </body>
+
+
 </html>
 
