@@ -115,7 +115,9 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
-
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    float:left;
 }
 #menuBtn{
     width:50px;
@@ -180,15 +182,18 @@ float: right;
     background-color: #fde74c;
     padding: 10px 20px;
     border-radius: 10px;
+    width:800px;
+   
   }
   
   .searchInput {
     border: none;
     background-color: transparent;
+    width:770px;
   }
   
   .searchInput::placeholder {
-    color: #d6edff;
+    color: #000;
   }
   
   .limitedOffer {
@@ -524,13 +529,14 @@ float: right;
   
   .nsItem {
     flex: 1;
-    background-color: black;
+    background-color: #D6EDFF;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .nsImg {
@@ -540,12 +546,17 @@ float: right;
   
   .nsTitle {
     font-size: 40px;
+    color: #4887BA;
+  }
+  .nsTitleSm{
+    color:#4887BA;
   }
   
   .nsButton {
     padding: 15px;
     font-weight: 600;
     cursor: pointer;
+    color:#E56B6F;
   }
   
   footer {
