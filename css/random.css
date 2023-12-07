@@ -151,15 +151,18 @@ nav ul li a{
 
 }
 
-.img-box{
+/*.img-box{
     display: flex;
     align-items: center;
     justify-content: center;
+}*/
+
+.caca {
+    display: flex;
+    padding-left: 40px;
 }
 
-.x-button{
-    float: left;
-}
+
 
 
 
