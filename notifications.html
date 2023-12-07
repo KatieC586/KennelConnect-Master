@@ -13,14 +13,15 @@
 
 <body>
 <div id="container">
+    <div id="container">
         <div id="banner">
-			<img src="pics/final logo (1) (1).png" alt="Kennel Connect" ;/> <!--add img-fluid to be able to schmove it around!-->
+            <img src="pics/final logo (1) (1).png" alt="Kennel Connect";/> 
         
              <bar class="navbar">
             <ul>
                  <li><a href="home.html">Home</a></li> 
-                 <li><a href="About.html">About</a></li> 
-                <li><a href="Contact.html">Contact</a></li> 
+                 <li><a href="about.html">About</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
              </ul>
              <div class="clearfix">
                     <i class="fa-solid fa-bars fa-2xl" style="color: #4887BA;" a href="#" id="menuBtn"> </i>
@@ -30,11 +31,11 @@
     <div id="container-bottom">
         <nav id="sideNav">
             <ul>
-                <li><a href="Profile.html">Your Profile</a></li><br/>
+                <li><a href="profile.html">Your Profile</a></li><br/>
                 <li><a href="profile.settings.html">Edit Profile</a></li><br/>
                 <li><a href="notifications.html">Messages</a></li><br/>
                 <li><a href="shop.html">Shop</a></li><br/>
-              <li><a href="matches.html">Matches</a></li><br/>
+                <li><a href="matches.html">Matches</a></li><br/>
                 <li><a href="resources.html">Resources</a></li><br/>
             </ul>
         </nav><!--side-nav-->
@@ -52,10 +53,9 @@
             }
         }
 </script>
-<!--add container fluid to be able to have the container change sizes when the screen size changes-->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-<div class="container">
+<div class="contain">
 <div class="row clearfix">
     <div class="col-lg-12">
         <div class="card chat-app">
@@ -65,7 +65,7 @@
                         <span class="input-group-text"><i class="fa fa-search"></i></span>
                     </div>
                     <input type="text" class="form-control" placeholder="Search...">
-                </div>
+                </div><!--inputgroup-->
                 <ul class="list-unstyled chat-list mt-2 mb-0">
                     <li class="clearfix">
                         <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
@@ -130,46 +130,48 @@
                             <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="chat-history">
+                </div><!--chat-header clearfix-->
+             <div class="chat-history">
                     <ul class="m-b-0">
                         <li class="clearfix">
                             <div class="message-data text-right">
                                 <span class="message-data-time">10:10 AM, Today</span>
                                 <img src="pics/carlos.jpg" alt="avatar">
-                            </div>
+                            </div><!--message-data text-right-->
                             <div class="message other-message float-right"> Hi Aiden, I see that I was a match for Millie! Am I able to come into the shelter tomorrow at 4pm to see her? </div>
                         </li>
                         <li class="clearfix">
                             <div class="message-data">
                                 <span class="message-data-time">10:12 AM, Today</span>
-                            </div>
-                            <div class="message my-message float-left">Hello!</div>                                    
+                            </div><!--message-data>-->
+                            <div class="message my-message float-left">Hello!</div><!--message my-message float-left-->                               
                         </li>                               
                         <li class="clearfix">
                             <div class="message-data">
                                 <span class="message-data-time">10:15 AM, Today</span>
-                            </div>
-                            <div class="message my-message float-left">Yes! You can come in at 4:00.</div>
+                            </div><!--message-data-->
+                            <div class="message my-message float-left">Yes! You can come in at 4:00.</div><!--message my-message float-left-->
                         </li>
                     </ul>
-                </div>
+             </div><!--chat-history-->
                 <div class="chat-message clearfix">
-                    <div class="input-group mb-0">
-                        <div class="input-group-prepend">
+                        <div class="input-group mb-0">
+                            <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-send"></i></span>
-                        </div>
+                            </div><!--input-group-text-->
                         <input type="text" class="form-control" placeholder="Enter text here...">                                    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                        </div><!--input-group-prepend-->
+                </div><!--chat-message clearfix-->
+            </div><!--chat-->
+        </div><!--card chat-app-->
+    </div><!--col-lg-12-->
+  </div>
+ 
+
+</div><!--contain-->
+
 </div>
 
-    </div><!--container-bottom-->
-</div><!--container-->
 
 
 
