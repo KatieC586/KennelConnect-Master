@@ -729,8 +729,13 @@ textarea{
     top:100%;
     text-align: center;
     width:100%;
-    position:absolute;
     
+}
+h8.clear{
+    clear:left;
+}
+p.clear{
+    clear:left;
 }
 .mission p{
 font-size:19px;
