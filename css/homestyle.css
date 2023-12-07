@@ -533,6 +533,19 @@ body{
     width:100%;
     float:right;
 }
+.input-group span{
+    bottom:12px;
+    right:17px;
+    font-size:14px;
+    color:red;
+}
+#submit-error{
+    color:red;
+
+}
+.input-group span i{
+    color:seagreen;
+}
 
 h2{
 	position: relative;
@@ -571,7 +584,7 @@ textarea{
 	min-height: 150px;
 }
 
-.btn{
+.submit-button{
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: #E56B6F;
@@ -606,6 +619,7 @@ textarea{
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 
 .headingabt{
@@ -616,6 +630,7 @@ textarea{
     flex-direction: column;
     text-align: center;
     margin:20px auto;
+    overflow:hidden;
 }
 
 .headingabt h9{
@@ -644,7 +659,7 @@ textarea{
     width: 90%;
     margin: 0 auto;
     padding:10px 20px;
-}
+  }
 
 .abtc{
     display: flex;
@@ -709,11 +724,12 @@ textarea{
 
 }
 .mission{
-    padding:10px;
-    margin:10px auto;
-    position:absolute;
+    padding:10px 10px;
+    margin:10px 0px ;
     top:100%;
     text-align: center;
+    width:100%;
+    position:absolute;
     
 }
 .mission p{
@@ -725,17 +741,14 @@ text-align:center;
     font-size: 23px;
     text-align: center;
 }
-/*.Millie{
- 
-    position:relative;
+.gif{
+    position:absolute;
+    top:100%;
+    padding:100px;
+    align-items: center baseline;
     float:right;
+    margin-left:430px;
 }
-.Miso{
-    
-    position:relative;
-
-
-}*/
 .wrapper{
     padding: 30px 50px;
     border: 1px solid #ddd;
