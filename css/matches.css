@@ -135,4 +135,97 @@ text-align:center;
 
 }
 
+
+
+
+
+
+
+
+
 /*start of the rest of coding for pg*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.headc {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin:20px auto;
+}
+
+
+.matches .box-conm{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.matches .box-conm .boxm{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 1px;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.matches .box-conm .boxm .lastv{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color:var(#E56B6F);
+    background: rgba(255,51,153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.matches .box-conm .boxm .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.matches .box-conm .boxm .image img{
+    height: 25rem;
+}
+
+.matches .box-conm .boxm:hover .image img{
+    transform: scale(1.1);
+    filter: grayscale(100%); /*maybe lmk what u think*/
+}
+
+.matches .box-conm .boxm .contentm{
+    padding:2rem;
+    text-align: center;
+}
+
+.matches .box-conm .boxm .contentm h52{
+    font-size: 2.5 rem;
+}
+
+.matches .box-conm .boxm .contentm .area{
+    font-size: 2.5rem;
+    color:var(#E56B6F);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
