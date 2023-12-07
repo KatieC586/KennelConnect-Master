@@ -195,7 +195,10 @@ float: right;
   .searchInput::placeholder {
     color: #000;
   }
-  
+  .searchIcon{
+    cursor:pointer;
+
+  }
   .limitedOffer {
     font-size: 20px;
     border-bottom: 2px solid green;
@@ -274,7 +277,7 @@ float: right;
     z-index: 1;
   }
   
-  .buyButton {
+  /*.buyButton {
     position: absolute;
     top: 50%;
     right: 10%;
@@ -418,7 +421,6 @@ float: right;
   }
   
   .payButton {
-    position: absolute;
     height: 40px;
     bottom: -40;
     width: 100%;
@@ -496,12 +498,15 @@ float: right;
   }
   
   .productButton {
-    float: right;
+    float:right;
+    margin-right:200px;
     padding: 10px 20px;
     background-color: black;
     color: white;
     font-weight: 600;
     cursor: pointer;
+    z-index: 2;
+    width:100px;
   }
   
   .productButton:hover {
@@ -517,6 +522,7 @@ float: right;
   .galleryItem {
     flex: 1;
     padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .galleryImg {
@@ -662,7 +668,7 @@ float: right;
     }
   
     .buyButton{
-      right: 0;
+      right: 10px;
       top: 0;
     }
   
@@ -670,15 +676,19 @@ float: right;
       flex-direction: column;
     }
   
-    .product{
+    /*.product{
       clip-path: none ;
       display: flex;
       flex-direction: column;
       align-items: center;
+      top:100%;
     }
   
     .productImg{
       width: 80%;
+      margin-top:5000px;
+      margin-bottom:0px;
+      align-items: baseline;
     }
   
     .productDetails{
@@ -695,7 +705,7 @@ float: right;
     .productTitle{
       font-size: 50px;
       margin: 0;
-    }
+    }*/
   
     .gallery{
       display: none;
