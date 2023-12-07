@@ -6,6 +6,55 @@
   overflow: hidden;
   border-radius: 25px;
 }*/
+
+/*CONTENT OF PAGE*/
+/*CONTENT OF PAGE*/
+/*CONTENT OF PAGE*/
+/*CONTENT OF PAGE*/
+/*CONTENT OF PAGE*/
+
+.slide-wrapper{
+    background: linear-gradient(0deg, #E56B6F, #fde74c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-img {
+    width: 50%;
+    height: auto;
+    padding-top: 50px;
+    border-radius: 20px;
+    padding-bottom: 50px;  
+}
+
+.x-button i{
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    padding-right: 200px;
+}
+
+.heart-button i{
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+}
+
+.caca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+
+/*END CONTENT OF PAGE*/
+/*END CONTENT OF PAGE*/
+/*END CONTENT OF PAGE*/
+/*END CONTENT OF PAGE*/
+
+
 #banner{
     width:800 px;
     height: 100 px;
@@ -15,13 +64,21 @@
     /*margin:10px;*/
     padding-bottom: 20px;
     margin-bottom:20px;
-    margin-top:50px;
+    /*margin-top:50px;*/
+    padding: 30px;
 }
+
+.KennelConnect{
+    width: 150px;
+}
+
 
 .navbar{
 margin: 30px auto;
+
 display: flex;
 align-items: center;
+justify-content: center;
 float:right;
 font-size:18px;
 font-family:Arial, Helvetica, sans-serif;
@@ -30,6 +87,7 @@ font-family:Arial, Helvetica, sans-serif;
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 .ul{
     flex:1;
@@ -47,6 +105,7 @@ text-decoration:none;
 color: black;
 padding: 0 10px;
 position:relative;
+float: right;
 }
 
 bar ul li a::after{
@@ -139,7 +198,7 @@ nav ul li a{
 }
 #menuBtn{
     width:50px;
-    position:relative;
+    position:absolute;
     /*right:65px;
     top:35px;*/
     z-index:3;
@@ -153,6 +212,8 @@ position:relative;
 text-align:center;
 
 }
+
+
 /*.left-column,.right-column{
     flex-basis:50%;
     }
@@ -434,7 +495,7 @@ float: right;
 }
 
 /*img-slider*/
-.slider-img{
+/*.slider-img{
     margin: 0 40px;
     overflow: hidden;
     border-radius: 25px;
@@ -448,10 +509,10 @@ float: right;
     position:relative;
     /*float:left;*/
     
-  }
+  /*}
   
   /* Darker background on mouse-over */
-  .button:hover {
+  /*.button:hover {
     background-color: #fde74c;
   }
   .R-button {
@@ -464,6 +525,7 @@ float: right;
   }
   
   /* Darker background on mouse-over */
+  
   .button:hover {
     background-color: #fde74c;
   }
