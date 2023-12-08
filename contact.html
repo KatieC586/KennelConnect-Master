@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Kennel Connect Contact Page</title>
+    <title>Contact Us | Kennel Connect</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="css/homestyle.css" rel="stylesheet" type="text/css" />
     <!--<link href="js/script.js" rel="javascript" type="text/js" />-->
@@ -158,6 +158,7 @@
             submitError.innerHTML = 'Please correct error to submit';
             setTimeout(function(){submitError.style.display = 'none';}, 3000);
             return false;
+        }else{ success(username);
         }
 
     }

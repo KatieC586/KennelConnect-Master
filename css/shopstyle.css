@@ -175,7 +175,24 @@ float: right;
     align-items: center;
     justify-content: space-between;
   }
-  
+
+.payInput span{
+    bottom:12px;
+    position:absolute;
+    right:17px;
+    font-size:14px;
+    color:red;
+    }
+#submit-error{
+    color:red;
+    
+    }
+.payInput span i{
+    color:seagreen;
+    }
+
+
+
   .search {
     display: flex;
     align-items: center;
@@ -199,9 +216,6 @@ float: right;
     cursor:pointer;
 
   }
-.payInput span{
-    color:red;
-}
   .limitedOffer {
     font-size: 20px;
     border-bottom: 2px solid green;

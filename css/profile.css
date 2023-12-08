@@ -1,11 +1,3 @@
-/*.slide-wrapper{
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
-    margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
-}*/
 #banner{
     width:800 px;
     height: 100 px;
@@ -15,13 +7,21 @@
     /*margin:10px;*/
     padding-bottom: 20px;
     margin-bottom:20px;
-    margin-top:50px;
+    /*margin-top:50px;*/
+    padding: 30px;
 }
+
+.KennelConnect{
+    width: 150px;
+}
+
 
 .navbar{
 margin: 30px auto;
+
 display: flex;
 align-items: center;
+justify-content: center;
 float:right;
 font-size:18px;
 font-family:Arial, Helvetica, sans-serif;
@@ -30,6 +30,7 @@ font-family:Arial, Helvetica, sans-serif;
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 .ul{
     flex:1;
@@ -47,6 +48,7 @@ text-decoration:none;
 color: black;
 padding: 0 10px;
 position:relative;
+float: right;
 }
 
 bar ul li a::after{
@@ -139,7 +141,7 @@ nav ul li a{
 }
 #menuBtn{
     width:50px;
-    position:relative;
+    position:absolute;
     /*right:65px;
     top:35px;*/
     z-index:3;
@@ -153,6 +155,8 @@ position:relative;
 text-align:center;
 
 }
+
+
 /*.left-column,.right-column{
     flex-basis:50%;
     }
@@ -174,412 +178,97 @@ float: right;
     * html .clearfix { height: 1%; }
     .clearfix { display: block; }
 
-
-/*notifications page*/
-.card {
-    background: #fff;
-    transition: .5s;
-    border: 0;
-    margin-bottom: 30px;
-    border-radius: .55rem;
-    position: relative;
-    width: 100%;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
-}
-.chat-app .people-list {
-    width: 280px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 20px;
-    z-index: 7
-}
-
-.chat-app .chat {
-    margin-left: 280px;
-    border-left: 1px solid #eaeaea
-}
-
-.people-list {
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s
-}
-
-.people-list .chat-list li {
-    padding: 10px 15px;
-    list-style: none;
-    border-radius: 3px
-}
-
-.people-list .chat-list li:hover {
-    background: #efefef;
-    cursor: pointer
-}
-
-.people-list .chat-list li.active {
-    background: #efefef
-}
-
-.people-list .chat-list li .name {
-    font-size: 15px
-}
-
-.people-list .chat-list img {
-    width: 45px;
-    border-radius: 50%
-}
-
-.people-list img {
-    float: left;
-    border-radius: 50%
-}
-
-.people-list .about {
-    float: left;
-    padding-left: 8px
-}
-
-.people-list .status {
-    color: #999;
-    font-size: 13px
-}
-
-.chat .chat-header {
-    padding: 15px 20px;
-    border-bottom: 2px solid #f4f7f6
-}
-
-.chat .chat-header img {
-    float: left;
-    border-radius: 40px;
-    width: 40px
-}
-
-.chat .chat-header .chat-about {
-    float: left;
-    padding-left: 10px
-}
-
-.chat .chat-history {
-    padding: 20px;
-    border-bottom: 2px solid #fff
-}
-
-.chat .chat-history ul {
-    padding: 0
-}
-
-.chat .chat-history ul li {
-    text-decoration:none;
-    list-style: none;
-    margin-bottom: 30px
-}
-
-.chat .chat-history ul li:last-child {
-    margin-bottom: 0px
-}
-
-.chat .chat-history .message-data {
-    margin-bottom: 15px
-}
-
-.chat .chat-history .message-data img {
-    border-radius: 40px;
-    width: 40px
-}
-
-.chat .chat-history .message-data-time {
-    color: #434651;
-    padding-left: 6px
-}
-
-.chat .chat-history .message {
-    color: #444;
-    padding: 18px 20px;
-    line-height: 26px;
-    font-size: 16px;
-    border-radius: 7px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-.chat .chat-history .message:after {
-    bottom: 100%;
-    left: 7%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-bottom-color: #fff;
-    border-width: 10px;
-    margin-left: -10px
-}
-
-.chat .chat-history .my-message {
-    background: #efefef
-}
-
-.chat .chat-history .my-message:after {
-    bottom: 100%;
-    left: 30px;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-bottom-color: #efefef;
-    border-width: 10px;
-    margin-left: -10px;
-    text-decoration: none;
-}
-
-.chat .chat-history .other-message {
-    background: #e8f1f3;
-    text-align: right;
-}
-
-.chat .chat-history .other-message:after {
-    border-bottom-color: #e8f1f3;
-    left: 93%
-}
-
-.chat .chat-message {
-    padding: 20px
-}
-
-.online,
-.offline,
-.me {
-    margin-right: 2px;
-    font-size: 8px;
-    vertical-align: middle
-}
-
-.online {
-    color: #86c541
-}
-
-.offline {
-    color: #e47297
-}
-
-.me {
-    color: #1d8ecd
-}
-
-.float-right {
-    float: right
-}
-
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 767px) {
-    .chat-app .people-list {
-        height: 465px;
-        width: 100%;
-        overflow-x: auto;
-        background: #fff;
-        left: -400px;
-        display: none
-    }
-    .chat-app .people-list.open {
-        left: 0
-    }
-    .chat-app .chat {
-        margin: 0
-    }
-    .chat-app .chat .chat-header {
-        border-radius: 0.55rem 0.55rem 0 0
-    }
-    .chat-app .chat-history {
-        height: 300px;
-        overflow-x: auto
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    .chat-app .chat-list {
-        height: 650px;
-        overflow-x: auto
-    }
-    .chat-app .chat-history {
-        height: 600px;
-        overflow-x: auto
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-    .chat-app .chat-list {
-        height: 480px;
-        overflow-x: auto
-    }
-    .chat-app .chat-history {
-        height: calc(100vh - 350px);
-        overflow-x: auto
-    }
-}
-
-/*img-slider*/
-.slider-img{
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-    width:100%;
-}
-.L-button {
-    padding:12px 16px;
-    font-size: 3rem;
-    margin-left:250px;
-    cursor: pointer;
-    position:relative;
-    /*float:left;*/
-    
-  }
-  
-  /* Darker background on mouse-over */
-  .button:hover {
-    background-color: #fde74c;
-  }
-  .R-button {
-    padding: 12px 16px;
-    font-size: 3rem;
-    margin-right:250px;
-    cursor: pointer;
-    position:relative;
-    float:right;
-  }
-  
-  /* Darker background on mouse-over */
-  .button:hover {
-    background-color: #fde74c;
-  }
   /*Homestyle css*/
   
   
 
+/*New info card start*/
+.wrapperpfp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12%;
+}
 
-  
- 
- /*info card*/
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.user-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 650px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
 
- *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     list-style: none;
-     font-family: 'Roboto Condensed', sans-serif;
- }
+.user-card-ig img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.user-card-info{
+    text-align: center;
+}
  
- .containerpt{
-     width:90%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     text-align: center;
-     margin:20px auto;
- }
- 
- .containerpt h88{
-     font-size: 50px;
-     color: black;
-     margin-bottom: 25px;
-     position: relative;
- }
- 
- .wrapper4{
-     position: absolute;
-     top: 80%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     width: 900px;
-     height: 500px;
-     display: flex;
-     box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
- }
- 
- .wrapper4 .left {
-     width: 40%;
-     background: linear-gradient(to right, #154770, #288ada);
-     padding: 30px 25px;
-     border-top-left-radius: 5px;
-     border-bottom-left-radius: 5px;
-     text-align: center;
-     color: #fff;
- }
- 
- .wrapper4 .left img {
-     margin-top: 60px;
-     margin-bottom: 10px;
-     border-radius: 5px;
- }
- 
- .wrapper4 .left h4 {
-     margin-bottom: 10px;
- }
- 
- .wrapper4 .left p{
-     font-size: 17px;
- }
- 
- .wrapper4 .right{
-     width: 80%;
-     background: #fff;
-     border-top-right-radius: 5px;
-     border-bottom-right-radius: 5px;
-     padding: 30px 25px;
- }
- 
- .wrapper4 .right .info,
- .wrapper4 .right .Activity{
-     margin-top: 70px;
- }
- 
- .wrapper4 .right .info h3,
- .wrapper4 .right .Activity h3{
-     margin-bottom: 15px;
-     padding-bottom: 5px;
-     border-bottom: 1px solid #e0e0e0;
-     color: #353c4e;
-     text-transform: uppercase;
-     letter-spacing: 5px;
- }
- 
- .wrapper4 .right .info_data,
- .wrapper4 .right .Activity_data {
-     display: flex;
-     justify-content: space-between;
- }
- 
- .wrapper4 .right .info_data .data,
- .wrapper4 .right .Activity_data .data {
-     width: 45%;
- }
- 
- .wrapper4 .right .info_data .data h4,
- .wrapper4 .right .Activity_data .data h4{
-     color: #353c4e;
-     margin-bottom: 5px;
- }
- 
- .wrapper4 .right .info_data .data p,
- .wrapper4 .right .Activity_data .data p{
-     font-size: 20px;
-     margin-bottom: 10px;
-     color: #919aa3;
- }
+.user-card-info h2{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user-card-info p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user-card-info p span{
+    font-weight: 700;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px){
+    .user-card{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .user-card-ig{
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .user-card-info{
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px){
+    .wrapperpfp{
+        padding-top: 3%;
+    }
+    .user-card::before{
+        width: 300%;
+        height: 20px;
+        transform: rotate(0);
+    }
+    .user-card-info h2{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    .user-card-info p span{
+        display: block;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}
+
+/*rollover css starts*/
+

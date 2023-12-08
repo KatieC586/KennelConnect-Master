@@ -895,6 +895,8 @@ select:focus{
     background-color: #fff;
     color: #e20404;
     border: 1px solid #ddd;
+    align-items: center;
+    float:right;
 }
 .danger:hover{
     background-color: #e20404;
@@ -907,4 +909,10 @@ select:focus{
     #deactivate{
         line-height: 18px;
     }
+}
+.application p{
+    color:blue;
+    float:right;
+    cursor:pointer;
+    top:0;
 }
