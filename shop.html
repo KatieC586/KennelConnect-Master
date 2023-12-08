@@ -155,9 +155,12 @@
 
     <div class="payment">
         <h1 class="payTitle">Personal Information</h1>
-        <input type="text" placeholder="Full Name" class="payInput">
-        <input type="text" placeholder="Phone Number" class="payInput">
-        <input type="text" placeholder="Shipping Address" class="payInput">
+        <input type="text" placeholder="Full Name" class="payInput" id="name" onkeyup="validateName()">
+        <span id="name-error"> </span>
+        <input type="text" placeholder="Phone Number" class="payInput" id="number" onkeyup="validateNumber()">
+        <span id="number-error"> </span>
+        <input type="text" placeholder="Shipping Address" class="payInput" id="shipping" onkeyup="validateShipping()">
+        <span id="shipping-error"> </span>
         <h1 class="payTitle">Card Information</h1>
         <div class="cardIcons">
             <img src="pics/visa.png" width="40" alt="" class="cardIcon">
@@ -168,12 +171,67 @@
             <input type="text" placeholder="mm" class="payInput sm">
             <input type="text" placeholder="yyyy" class="payInput sm">
             <input type="text" placeholder="cvv" class="payInput sm">
-        <button class="payButton">Checkout!</button>
+        <button onclick="return validateForm()" id="payment" onkeyup="validateForm">Checkout!</button>
+        <!--class="payButton"-->
         <span class="close">X</span>
+        <span id="payment-error">Please fix error</span>
     </div>
 </div>
 <script>
+    var nameError = document.getElementById('name-error')
+    var numberError = document.getElementById('number-error')
+    var shippingError = document.getElementById('shipping-error')
+    var submitError = document.getElementById('payment-error')
+    
+    function validateName(){
+        var name = document.getElementById('name').value;
+            if(name.length==0){
+                nameError.innerHTML = 'Name is required';
+                return false;
+            }
+           if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+                nameError.innerHTML = 'Write full name';
+                return false;
+            }
+            nameError.innerHTML = '<i class="fas fa-check-circle"></i>';
+           return true;
+    }
+    function validateNumber(){ //watch video to get the phone number javascript
+        var number = document.getElementById('number').value;
+            if(number.length!==10){
+                numberError.innerHTML = 'Phone number is required';
+                return false;
+            }
+            if(!number.match(/^[0-9]{10}$/)){
+                numberError.innerHTML = 'only use digits';
+                return false;
+            }
+        numberError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+    }
+    function validateShipping(){ //watch video to get the shipping address javascript
+        var shipping = document.getElementById('shipping').value;
+            if(shipping.length==0){
+                shippingError.innerHTML = 'Shipping address is required';
+                return false;
+            }
+            if(!shipping.match(/^[0-3]*\s{1}[A-Za-z]*\s{1}[A-Za-z]{3,10}$/)){
+                shippingError.innerHTML = 'Shipping address invalid'
+                return false;
+            }
+        shippingError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+    }
+    function validateForm(){
+        if(!validateName() || !validateNumber() || !validateShipping()){
+            paymentError.style.display = 'block';
+            paymentError.innerHTML = 'Please correct error to submit';
+            setTimeout(function(){paymentError.style.display = 'none';}, 3000);
+            return false;
+    }
+    }
 
+//fix the validate part;P and also clear form on submit button click
 
 </script>
 <script>
