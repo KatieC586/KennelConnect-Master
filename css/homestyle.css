@@ -678,6 +678,10 @@ textarea{
 	}
 }
 
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -811,13 +815,38 @@ text-align:center;
     text-align: center;
 }
 .gif{
-    position:absolute;
-    top:100%;
-    padding:100px;
-    align-items: center baseline;
-    float:right;
-    margin-left:430px;
+
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    padding-left: 600px;
 }
+
+@media screen and (max-width: 768px){
+    .mission{
+        padding: 0px 20px;
+    }
+    .mission h8{
+        font-size: 36px;
+    }
+    .mission p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .gif{
+        margin-bottom: 20px;
+        padding: 10;
+        overflow: hidden;
+    }
+
+}
+
+
+
+
+
+
 .wrapper{
     padding: 30px 50px;
     border: 1px solid #ddd;
