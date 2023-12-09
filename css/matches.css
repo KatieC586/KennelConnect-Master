@@ -16,7 +16,7 @@ display: flex;
 align-items: center;
 float:right;
 font-size:18px;
-font-family:Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -36,6 +36,7 @@ text-decoration:none;
 color: black;
 padding: 0 10px;
 position:relative;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 bar ul li a::after{
@@ -115,7 +116,7 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size:18px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     float:left;
 }
 #menuBtn{
@@ -149,7 +150,7 @@ text-align:center;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -220,6 +221,7 @@ text-align:center;
 
 .matches .box-conm .boxm .contentm h52{
     font-size: 2.5 rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .matches .box-conm .boxm .contentm .area{
