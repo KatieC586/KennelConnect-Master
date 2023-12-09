@@ -151,11 +151,11 @@ float: right;
     content: " ";
     clear: both;
     height: 0;
+    font-family:  Arial, Helvetica, sans-serif;
     }
     .clearfix { display: inline-block; }
     * html .clearfix { height: 1%; }
     .clearfix { display: block; }
-    /*font-family: 'Lato', sans-serif;*/
 
   
   html {
@@ -694,10 +694,21 @@ float: right;
       flex-direction: column;
     }
   
-  
+  .p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .h1{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .h2{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .h3{
+    font-family: Arial, Helvetica, sans-serif;
+  }
     .gallery{
       display: none;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: Arial, Helvetica, sans-serif;
       text-align:center;
     }
   
