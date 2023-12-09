@@ -135,6 +135,11 @@ position:relative;
 text-align:center;
 
 }
+
+.KennelConnect{
+  width: 150px;
+}
+
 /*.left-column,.right-column{
     flex-basis:50%;
     }
