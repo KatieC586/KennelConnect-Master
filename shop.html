@@ -10,9 +10,6 @@
     <script src="https://kit.fontawesome.com/10ddbc535d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"rel="stylesheet">
 
-
-    <!--<link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">-->
 </head>
 <body>
     <div id="container">
@@ -175,7 +172,7 @@
             <input type="text" placeholder="yyyy" class="payInput sm">
             <input type="text" placeholder="cvv" class="payInput sm">
         <button onclick="return validateForm()" id="payment" onkeyup="validateForm">Checkout!</button>
-        <!--class="payButton"-->
+    
         <span class="close">X</span>
         <span id="payment-error">Please fix error</span>
     </div>
@@ -199,7 +196,7 @@
             nameError.innerHTML = '<i class="fas fa-check-circle"></i>';
            return true;
     }
-    function validateNumber(){ //watch video to get the phone number javascript
+    function validateNumber(){ 
         var number = document.getElementById('number').value;
             if(number.length!==10){
                 numberError.innerHTML = 'Phone number is required';
@@ -212,7 +209,7 @@
         numberError.innerHTML = '<i class="fas fa-check-circle"></i>';
         return true;
     }
-    function validateShipping(){ //watch video to get the shipping address javascript
+    function validateShipping(){
         var shipping = document.getElementById('shipping').value;
             if(shipping.length==0){
                 shippingError.innerHTML = 'Shipping address is required';
@@ -234,7 +231,7 @@
     }
     }
 
-//fix the validate part;P and also clear form on submit button click
+
 
 </script>
 <script>
@@ -329,18 +326,15 @@
     
     menuItems.forEach((item, index) => {
       item.addEventListener("click", () => {
-        //change the current slide
+
         wrapper.style.transform = `translateX(${-100 * index}vw)`;
     
-        //change the choosen product
         choosenProduct = products[index];
     
-        //change texts of currentProduct
         currentProductTitle.textContent = choosenProduct.title;
         currentProductPrice.textContent = "$" + choosenProduct.price;
         currentProductImg.src = choosenProduct.colors[0].img;
     
-        //assing new colors
         currentProductColors.forEach((color, index) => {
           color.style.backgroundColor = choosenProduct.colors[index].code;
         });
