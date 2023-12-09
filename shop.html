@@ -174,7 +174,7 @@
         <button onclick="return validateForm()" id="payment" onkeyup="validateForm">Checkout!</button>
     
         <span class="close">X</span>
-        <span id="payment-error">Please fix error</span>
+        <span id="payment-error"></span>
     </div>
 </div>
 <script>
@@ -215,7 +215,7 @@
                 shippingError.innerHTML = 'Shipping address is required';
                 return false;
             }
-            if(!shipping.match(/^[0-3]*\s{1}[A-Za-z]*\s{1}[A-Za-z]{3,10}$/)){
+            if(!shipping.match(/^[0-9]*\s{1}[A-Za-z]*\s{1}[A-Za-z]{3,10}$/)){
                 shippingError.innerHTML = 'Shipping address invalid'
                 return false;
             }
