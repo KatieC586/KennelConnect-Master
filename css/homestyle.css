@@ -762,6 +762,34 @@ textarea{
     font-size: 19px;
     line-height: 1.5;
 }
+.h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h7{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h8{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 @media screen and (max-width: 768px){
     .headingabt{
