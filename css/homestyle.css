@@ -449,6 +449,9 @@ float: right;
     height: 0;
     text-decoration: none;
 }
+.contain{
+    top:100%;
+}
 
 @media only screen and (max-width: 767px) {
     .chat-app .people-list {
@@ -496,37 +499,7 @@ float: right;
     }
 }
 
-/*img-slider*/
-/*.slider-img{
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-    width:100%;
-}
-.L-button {
-    padding:12px 16px;
-    font-size: 3rem;
-    margin-left:250px;
-    cursor: pointer;
-    position:relative;
-    /*float:left;*/
-    
-  /*}
-  
-  /* Darker background on mouse-over */
-  /*.button:hover {
-    background-color: #fde74c;
-  }
-  .R-button {
-    padding: 12px 16px;
-    font-size: 3rem;
-    margin-right:250px;
-    cursor: pointer;
-    position:relative;
-    float:right;
-  }
-  
-  /* Darker background on mouse-over */
+
   
   .button:hover {
     background-color: #fde74c;
@@ -1305,6 +1278,7 @@ body{
     color: white;
     padding: 20px 0px;
     
+    
   }
   
   .navTop {
@@ -1377,7 +1351,7 @@ body{
     font-weight: 400;
   }
   
-  .slider {
+  .slide {
     background: url("https://wallpapercave.com/wp/wp5518143.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     overflow: hidden;
@@ -1404,7 +1378,7 @@ body{
     position: absolute;
   }
   
-  .sliderImg {
+  .sliderShop {
     z-index: 1;
   }
   
