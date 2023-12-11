@@ -1777,10 +1777,12 @@ body{
     .slider{
       clip-path: none;
     }
-  
-    .sliderImg{
-      width: 90%;
+
+    .sliderItem{
+      width: 24%;
+      scale: 75%
     }
+  
   
     .sliderBg{
       width: 100%;
